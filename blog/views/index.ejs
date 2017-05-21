@@ -1,12 +1,22 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/bootsrap.min.css' />
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include header %>
+<form>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="SEARCH" name="keyword">
+        <span class="input-group-btn">
+            <input type="submit" value="搜索" class="btn btn-default" />
+        </span>
+    </div>
+</form>
+
+<ul class="list-group">
+    <li class="list-group-item">
+        <h3><a href="#">node+express搭建个人博客</a></h3>
+        <p class="info">
+            <span>作者：陈一龙</span>
+            <span>|</span>
+            <span>日期：2017-5-21</span>
+        </p>
+    </li>
+    <hr>
+</ul>
+<%- include footer %>
